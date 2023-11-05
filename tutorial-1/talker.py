@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #import the rospy package and the String message type
 import rospy
 from std_msgs.msg import String
@@ -19,6 +20,7 @@ def messagePublisher():
         #publish the message to the topic
         message_publisher.publish(message)
         #rate.sleep() will wait enough until the node publishes the     message to the topic
+        print("\n talker stream")
         rate.sleep()
 if __name__ == '__main__':
     try:
