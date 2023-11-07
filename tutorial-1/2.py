@@ -27,9 +27,7 @@ def main():
     
     while not rospy.is_shutdown():
         pub.publish(vel)
-        rate.sleep()
-        
-    
+        rospy.spin()
 if __name__ == "__main__":
     try:
         main()

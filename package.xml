@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ros-tutorials</name>
+  <name>ros_tutorials</name>
   <version>0.0.0</version>
   <description>The ros-tutorials package</description>
 

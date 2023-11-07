@@ -5,7 +5,7 @@
   <arg name="y_pos" default="0.0"/>
   <arg name="z_pos" default="0.0"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find ros_basics_tutorials)/src/ros_workshop/myrobot.urdf" />
+  <param name="robot_description" command="$(find xacro)/xacro --inorder $(find ros-tutorials)/urdf_tutorial/myrobot.urdf" />
   <!-- gazebo configs -->
   <arg name="gui" default="true"/>
   <arg name="debug" default="false"/>
@@ -23,6 +23,7 @@
   </include>
 
   <!-- gazebo model -->
+
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -model myrobot -x $(arg x_pos) -y $(arg y_pos) -z $(arg z_pos) -param robot_description" />
   
   <!-- <rviz> -->
